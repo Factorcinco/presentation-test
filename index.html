@@ -3,16 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Presentación Web</title>
+    <title>Factor 5 - Presentación Corporativa</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="diapositiva">
-        <h1>¡Hola Mundo! 👋</h1>
-        <p>Esta es mi primera presentación web alojada en GitHub Pages.</p>
-        <button id="btnInteractivo">Haz clic aquí</button>
-        <p id="mensajeOculto" class="oculto">¡El JavaScript también funciona perfectamente! 🚀</p>
+    <div class="presentation-container">
+        
+        <section class="slide active" id="slide-1">
+            <div class="hero-content">
+                <div class="badge">Operador Logístico de Vanguardia</div>
+                <h1>FACTOR CINCO</h1>
+                <p class="subtitle">Innovación, eficiencia y optimización en la cadena de suministro.</p>
+                <div class="scroll-indicator">Pulsa la flecha derecha para comenzar →</div>
+            </div>
+        </section>
+
+        <section class="slide" id="slide-2">
+            <div class="content-wrapper">
+                <h2>Ingeniería & Soluciones</h2>
+                <p class="intro-text">Diseñamos procesos a medida integrando tecnología avanzada, sistemas de gestión de almacenes (WMS) y analítica de datos para maximizar la productividad.</p>
+                
+                <div class="services-grid">
+                    <div class="card">
+                        <div class="card-icon">📦</div>
+                        <h3>Gestión de Stock</h3>
+                        <p>Optimización del espacio, control de inventario en tiempo real y layouts eficientes.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">⚡</div>
+                        <h3>Picking de Alta Eficiencia</h3>
+                        <p>Análisis de productividad y sistemas guiados para reducir tiempos de preparación.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📊</div>
+                        <h3>Data & Automatización</h3>
+                        <p>Integración de sistemas y cuadros de mando (Power BI) para la toma de decisiones.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide" id="slide-3">
+            <div class="hero-content">
+                <h2>Impulsando el Futuro Logístico</h2>
+                <p class="subtitle">Conectando estrategia, tecnología y operaciones de manera transversal.</p>
+                <button id="btnReiniciar" class="btn-primary">Volver al inicio</button>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="controls">
+        <button id="btnPrev" class="control-btn" disabled>⟵</button>
+        <span id="slideProgress">1 / 3</span>
+        <button id="btnNext" class="control-btn">⟶</button>
     </div>
 
     <script src="script.js"></script>
